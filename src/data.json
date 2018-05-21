@@ -1,0 +1,26 @@
+[
+    {"name":"TransAmerica Building",
+        "coordinates": [-122.4028,37.7952],
+        "status": "Completed"
+    },
+    { "name": "SalesForce Tower",
+        "coordinates" : [-122.3969,37.7899],
+        "status": "Completed"
+    }, 
+     {  "name" : "Oceanwide Center",
+        "coordinates" : [-122.3985,37.7903],
+        "status": "Under Construction"
+    },
+    {
+        "name": "One Oak",
+        "coordinates" : [-122.4200,37.7751],
+        "status": "Approved"
+    },
+    {
+        "name": "Transbay Parcel F",
+        "coordinates": [-122.3973,37.788],
+        "status": "Proposed",
+        "year": null
+
+    }
+]
