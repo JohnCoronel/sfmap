@@ -3,8 +3,9 @@ import SideBar from './sidebar';
 import '../sfmap.css';
 import mapboxgl from 'mapbox-gl';
 import data from '../data.json';
+import MAPBOX_KEY from '../config';
 
-mapboxgl.accessToken = 'pk.eyJ1Ijoiam9obm1jb3JvIiwiYSI6ImNqaDQ3MTJsdzA4aG0ycHFrY2dxZXd3Z2UifQ.WcdccA2rEJQIzEayDLWQlg'
+mapboxgl.accessToken = MAPBOX_KEY
 
 export default class Map extends Component {
     constructor(props){
