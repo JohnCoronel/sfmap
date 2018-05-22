@@ -1,26 +1,90 @@
 [
-    {"name":"TransAmerica Building",
-        "coordinates": [-122.4028,37.7952],
-        "status": "Completed"
-    },
     { "name": "SalesForce Tower",
         "coordinates" : [-122.3969,37.7899],
-        "status": "Completed"
+        "status": "Completed",
+        "image": ["https://c1.sfdcstatic.com/content/dam/blogs/us/thumbnails/topping-off-salesforce-tower/sftowerto.png"]
     }, 
      {  "name" : "Oceanwide Center",
         "coordinates" : [-122.3985,37.7903],
-        "status": "Under Construction"
+        "status": "Under Construction",
+        "image": ["https://www.fosterandpartners.com/media/2636399/2213_fp602669_2213_fp570258.jpg?width=250&quality=85"]
     },
     {
         "name": "One Oak",
         "coordinates" : [-122.4200,37.7751],
-        "status": "Approved"
+        "status": "Approved",
+        "image": ["https://static1.squarespace.com/static/571013fd37013b18ee710144/57156a25f8baf36927c2147e/594469b2e58c62f6e43b3b3f/1497655760095/17+0531+East+Market.jpg?format=750w"]
     },
     {
         "name": "Transbay Parcel F",
         "coordinates": [-122.3973,37.788],
         "status": "Proposed",
+        "image": ["https://s3.amazonaws.com/hines-images/parcel-f/parcelf_rendering_exterior_elevation_hres.jpg"],
         "year": null
 
+    },
+    {
+        "name": "706 Mission Street",
+        "coordinates": [-122.4025,37.786111],
+        "status": "Under Construction",
+        "image": ["http://www.webcor.com/wp-content/uploads/2016/06/706mission_b.jpg"]
+    },
+    {
+        "name": "181 Fremont",
+        "coordinates": [-122.39535,37.7897],
+        "status": "Under Construction",
+        "image": ["https://amp.businessinsider.com/images/5829f58546e27ab6608b5fc1-750-563.jpg"]
+    },
+ {
+     "name": "600 Van Ness",
+     "coordinates": [-122.420225,37.781345],
+     "status": "Proposed",
+     "image": ["https://hoodwork-production.s3.amazonaws.com/uploads/story/image/64272/600_van_ness_and_city_hall.jpg"]
+ },
+ { 
+     "name": "524 Howard",
+     "coordinates": [-122.397036,37.788242],
+     "status": "Approved",
+     "image": ["http://www.socketsite.com/wp-content/uploads/2016/11/524-Howard-Street-Rendering-1.jpg"]
+ },
+ {
+     "name": "1500 Mission",
+     "coordinates": [-122.4184,37.7738],
+     "status": "Under Construction",
+     "image": ["http://images.skyscrapercenter.com/building/1500missionst_rendering-full_(c)related__california.jpg"]
+ },
+ {
+     "name": "555 Howard",
+     "coordinates":[-122.396911,37.787424],
+     "status": "Approved",
+    "image": ["http://www.socketsite.com/wp-content/uploads/2017/02/555-Howard-Rendering-2017.jpg"]
+},
+{
+    "name": "10 South Van Ness",
+    "coordinates": [-122.419561,37.774216],
+    "status": "Proposed",
+    "image":["https://www.crescentheights.com/assets/uploads/images/projects/10-van-ness/_large5x3/10SVN-hero-and-close-up.jpg"]
+},
+{
+    "name":"30 Otis",
+    "coordinates": [-122.419395,37.772917],
+    "status": "Proposed",
+    "image":["http://www.skyscrapercenter.com/api/image/56558/thumb?size=300x415"],
+    "figures": {
+        "height": 250,
+        "GFA": 434001
     }
+},
+{
+    "name":"98 Franklin",
+    "coordinates":[-122.420595,37.775023],
+    "status": "Proposed",
+    "image":["http://www.socketsite.com/wp-content/uploads/2016/11/98-Franklin-Street-Massing.jpg"]
+},
+{
+    "name": "Park Tower",
+    "coordinates": [-122.394167,37.790278],
+    "status": "Under Construction",
+    "image":["https://aedesign.files.wordpress.com/2015/09/park-tower.jpg"]
+}
 ]

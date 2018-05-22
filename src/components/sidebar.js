@@ -13,11 +13,12 @@ const Sidebar = (props) => {
          top: '1rem',
          height: '90vh',
          right:'5rem',
-         background:'white'
+         background:'#F8F8F8',
+         overflow:'scroll'
      }
     return (
         <Tabs style = {style}  onSelect ={(from,to) => props.handleTabChange(from,to)} selectedTabClassName = "tab--selected">
-            <TabList>
+            <TabList className = "tablist">
                 <Tab> Under Construction </Tab>
                 <Tab> Proposed </Tab>
                 <Tab> Completed </Tab>
@@ -35,15 +36,24 @@ const Sidebar = (props) => {
 const renderPanel = (status) => {
       return (data.filter( building => building.status === status)
     .map(building => { 
-        return <PanelSection key = {building.name} name = {building.name}/>
+        return <PanelSection key = {building.name} building = {building}/>
     }))
 
 }
 
 const PanelSection = (props) => {
     return (
-        <div>
-            {props.name}
+        <div className = "panel-section">
+            
+           <img  height = "200px" width = "200px" src = {props.building.image}/>
+           <ul className = "panel-info">
+           <h2>{props.building.name} </h2>
+            Height : 500ft
+            Sq Ft : 500,000
+            Est - 2018
+            </ul>
+            
+            
         </div>
     )
 }

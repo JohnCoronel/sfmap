@@ -1,3 +1,32 @@
 .tab--selected {
     border-bottom: 2px solid;
 }
+
+.panel-section{
+
+   display:flex;
+    padding-left: 5px;
+    padding-top:2px;
+    height:250px;
+    background:#FFFAFA;
+    margin-bottom:1rem;
+}
+
+
+.tablist {
+    padding-left:7px;
+    width:450px;
+    position:fixed;
+    background:white;
+}
+
+.react-tabs__tab-panel {
+    margin-top:50px;
+}
+.panel-info {
+    padding-left:6px;
+}
+.panel-info h2 {
+    font-weight: 600;
+    font-size:16px;
+}

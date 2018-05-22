@@ -39,9 +39,6 @@ export default class Map extends Component {
     handleTabChange = (to,from) => {
         this.removeMarkers()
         let newMarkers = this.addMarkers(to);
-        
-        //Remove Markers from, and add To
-        //removeMarkers() && addMarkers(to)
         this.setState({markers:newMarkers})
        
     }
