@@ -12,6 +12,7 @@ export default class Map extends Component {
         super(props)
         this.state = {
             markers:this.addMarkers(0)
+          
         }
     
     }
@@ -48,6 +49,10 @@ export default class Map extends Component {
         });
     }
 
+    reCenter = (coordinates) => {
+        this.map.flyTo({center:coordinates,zoom:17})
+    }
+
     removeMarkers = () => {
         this.state.markers.forEach(element => {
             element.remove()
@@ -59,30 +64,37 @@ export default class Map extends Component {
                 return data.filter(building => {
                     return building.status === 'Under Construction'
                 }).map(item => {
-                    return (new mapboxgl.Marker().setLngLat(item.coordinates))
+                    let popup = this.makePopup(item)
+                    return (new mapboxgl.Marker().setLngLat(item.coordinates).setPopup(popup))
                 })
             case 1:
                 return data.filter(building => {
                     return building.status === 'Proposed'
                 }).map(item => {
-                    return (new mapboxgl.Marker().setLngLat(item.coordinates))
+                    let popup = this.makePopup(item)
+                    return (new mapboxgl.Marker().setLngLat(item.coordinates).setPopup(popup))
                 })
             case 2:
                 return data.filter(building => {
                     return building.status === 'Completed'
                 }).map(item => {
-                    return (new mapboxgl.Marker().setLngLat(item.coordinates))
+                    let popup = this.makePopup(item)
+                    return (new mapboxgl.Marker().setLngLat(item.coordinates).setPopup(popup))
                 })
             case 3:
                 return data.filter(building => {
                     return building.status === 'Approved'
                 }).map(item => {
-                    return  (new mapboxgl.Marker().setLngLat(item.coordinates))
+                    let popup = this.makePopup(item)
+                    return  (new mapboxgl.Marker().setLngLat(item.coordinates).setPopup(popup))
                 })
             default:
                 return []
-
         }
+    }
+
+    makePopup = building => {
+        return (new mapboxgl.Popup({offset:25}).setText(building.name))
     }
 
     render(){
@@ -91,7 +103,7 @@ export default class Map extends Component {
         return (
         <div>
             <div ref = {el => this.mapContainer = el} className = "SFmap"/>
-            <SideBar handleTabChange = {this.handleTabChange}/>
+            <SideBar handleRecenter = {this.reCenter} handleTabChange = {this.handleTabChange}/>
             </div>
         )
     }
