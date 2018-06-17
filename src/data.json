@@ -1,16 +1,28 @@
 [
     { "name": "SalesForce Tower",
+        "height": 1070,
+        "floors":61,
+        "footage":1600000,
+        "type": "Office",
         "coordinates" : [-122.3969,37.7899],
         "status": "Completed",
         "image": ["https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-1/p200x200/13506988_1830902820471992_865627834958443017_n.jpg?_nc_cat=0&_nc_eui2=AeFzrWN9LKsOK77uV88cirLE7CHlvfDNEiJ0h4o9MICRRJcMh_x_oL3FVz6fzSBh9T2-sRm1CeCG-D2Oo7tjLkfyzPo0mNBpTsx1xlRm3BS6SQ&oh=9e2d2cf88d69602d13d7f8e3aa5bbc02&oe=5B7EA3EB"]
     }, 
      {  "name" : "Oceanwide Center",
+        "height":910,
+        "floors":61,
+        "footage": 1300000,
+        "type": "Office/Residential/Hotel",
         "coordinates" : [-122.3985,37.7903],
         "status": "Under Construction",
         "image": ["https://www.fosterandpartners.com/media/2636399/2213_fp602669_2213_fp570258.jpg?width=250&quality=85"]
     },
     {
         "name": "One Oak",
+        "floors": 40,
+        "footage": "N/A",
+        "units":304,
+        "height":400,
         "coordinates" : [-122.4200,37.7751],
         "status": "Approved",
         "image": ["https://static1.squarespace.com/static/571013fd37013b18ee710144/57156a25f8baf36927c2147e/594469b2e58c62f6e43b3b3f/1497655760095/17+0531+East+Market.jpg?format=750w"]
@@ -19,36 +31,58 @@
         "name": "Transbay Parcel F",
         "coordinates": [-122.3973,37.788],
         "status": "Proposed",
-        "image": ["https://s3.amazonaws.com/hines-images/parcel-f/parcelf_rendering_exterior_elevation_hres.jpg"],
-        "year": null
+        "image": ["https://s3.amazonaws.com/hines-images/parcel-f/parcelf_rendering_exterior_elevation_hres.jpg"]
+        
 
     },
     {
         "name": "706 Mission Street",
+        "footage": 700000,
+        "type":"Residential",
+        "height":510,
+        "floors":43,
         "coordinates": [-122.4025,37.786111],
         "status": "Under Construction",
         "image": ["http://www.webcor.com/wp-content/uploads/2016/06/706mission_b.jpg"]
     },
     {
         "name": "181 Fremont",
+        "height": 802,
+        "floors":56,
+        "footage":684000,
+        "units": "N/A",
+        "type": "Office/Residential",
         "coordinates": [-122.39535,37.7897],
         "status": "Under Construction",
         "image": ["https://amp.businessinsider.com/images/5829f58546e27ab6608b5fc1-750-563.jpg"]
     },
     {
         "name": "600 Van Ness",
+        "height": 130,
+        "units": 168,
+        "floors": 12,
+        "type": "Residential",
         "coordinates": [-122.420225,37.781345],
         "status": "Proposed",
         "image": ["https://hoodwork-production.s3.amazonaws.com/uploads/story/image/64272/600_van_ness_and_city_hall.jpg"]
     },
     { 
         "name": "524 Howard",
+        "height": 515,
+        "type": "Residential/Hotel",
+        "floors": 48,
+        "units": 334,
         "coordinates": [-122.397036,37.788242],
         "status": "Approved",
         "image": ["http://www.socketsite.com/wp-content/uploads/2016/11/524-Howard-Street-Rendering-1.jpg"]
     },
     {
         "name": "1500 Mission",
+        "floors":39,
+        "height":400,
+        "units": 550,
+        "footage": 1200000,
+        "type": "Residential/Office",
         "coordinates": [-122.4184,37.7738],
         "status": "Under Construction",
         "image": ["http://images.skyscrapercenter.com/building/1500missionst_rendering-full_(c)related__california.jpg"]
@@ -70,19 +104,24 @@
         "coordinates": [-122.419395,37.772917],
         "status": "Proposed",
         "image":["http://www.skyscrapercenter.com/api/image/56558/thumb?size=300x415"],
-        "figures": {
-            "height": 250,
-            "GFA": 434001
-        }
+        "height": 250,
+        "units": 423
+
     },
     {
         "name":"98 Franklin",
+        "height":320,
+        "footage": "N/A",
+        "units": 301,
         "coordinates":[-122.420595,37.775023],
         "status": "Proposed",
         "image":["http://www.socketsite.com/wp-content/uploads/2016/11/98-Franklin-Street-Massing.jpg"]
     },
     {
         "name": "Park Tower",
+        "height": 605,
+        "stories": 43,
+        "footage": 743000,
         "coordinates": [-122.394167,37.790278],
         "status": "Under Construction",
         "image":["https://aedesign.files.wordpress.com/2015/09/park-tower.jpg"]
@@ -95,18 +134,29 @@
     },
     {
         "name": "30 Van Ness",
+        "height": 520,
+        "footage":"N/A",
+        "type": "Residential",
+        "units": 562,
         "coordinates": [-122.419377,37.775739],
         "status": "Proposed",
         "image": ["http://www.socketsite.com/wp-content/uploads/2015/08/30-Van-Ness-Concept-Rendering.jpg"]
     },
     {
         "name": "100 Folsom",
+        "height": 400,
+        "units": 391,
+        "type": "Residential",
         "coordinates":[ -122.391201,37.790099],
         "status": "Under Construction",
         "image": ["http://www.socketsite.com/wp-content/uploads/2014/11/100-Folsom-Street-Rendering-Full.jpg"]
     },
     {
         "name": "75 Howard",
+        "footage": 335000,
+        "units":120,
+        "height":220,
+        "type":"Residential",
         "coordinates": [-122.391595,37.791597],
         "status": "Under Construction",
         "image": [ "http://news.theregistrysf.com/wp-content/uploads/2017/05/75-Howard-San-Francisco.jpg"  ]

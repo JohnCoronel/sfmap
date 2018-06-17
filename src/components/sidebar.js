@@ -12,7 +12,7 @@ const Sidebar = (props) => {
          top: '1rem',
          height: '90vh',
          maxHeight: '1000px',
-         right:'5rem',
+         right:'2rem',
          background:'#F8F8F8',
          overflow:'scroll'
      }
@@ -35,16 +35,17 @@ const Sidebar = (props) => {
 
 const renderPanel = (status,func) => {
       return (data.filter( building => building.status === status)
-    .map(building => { 
-        return <PanelSection key = {building.name} building = {building} centerfunc = {func}/>
+    .map((building,i) => { 
+        return <PanelSection key = {i} index = {i} building = {building} centerfunc = {func}/>
     }))
 
 }
 
 const PanelSection = (props) => {
     let cd = props.building.coordinates
+    let i = props.index
     return (
-        <div onClick = {(coordinates) => {props.centerfunc(cd)}} className = "panel-section">
+        <div onClick = {(coordinates) => {props.centerfunc(cd,i)}} className = "panel-section">
            <img  height = "200px" width = "200px" src = {props.building.image}/>
            <ul className = "panel-info">
            <h2 >{props.building.name} </h2>

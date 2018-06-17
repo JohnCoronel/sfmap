@@ -13,8 +13,7 @@ export default class Map extends Component {
         this.state = {
             markers:this.addMarkers(0)
           
-        }
-    
+        } 
     }
 
     componentDidMount(){
@@ -24,10 +23,7 @@ export default class Map extends Component {
             center:[-122.40,37.77],
             zoom: 12
         })
-
-       this.renderMarkers();
-       
-    
+        this.renderMarkers();
     }
 
     componentDidUpdate(){
@@ -49,8 +45,9 @@ export default class Map extends Component {
         });
     }
 
-    reCenter = (coordinates) => {
-        this.map.flyTo({center:coordinates,zoom:17})
+    reCenter = (coordinates,i) => {
+        this.map.flyTo({center:coordinates,zoom:15})
+        this.state.markers[i].togglePopup()
     }
 
     removeMarkers = () => {
@@ -94,7 +91,7 @@ export default class Map extends Component {
     }
 
     makePopup = building => {
-        return (new mapboxgl.Popup({offset:25}).setText(building.name))
+        return (new mapboxgl.Popup({offset:25}).setHTML('<h3>' + building.name + '</h3>'))
     }
 
     render(){
