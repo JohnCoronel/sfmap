@@ -1,0 +1,3 @@
+const MAPBOX_KEY = 'pk.eyJ1Ijoiam9obm1jb3JvIiwiYSI6ImNqaDQ3MTJsdzA4aG0ycHFrY2dxZXd3Z2UifQ.WcdccA2rEJQIzEayDLWQlg'
+
+export default MAPBOX_KEY
