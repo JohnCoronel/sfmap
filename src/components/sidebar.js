@@ -49,9 +49,11 @@ const PanelSection = (props) => {
            <img  height = "200px" width = "200px" src = {props.building.image}/>
            <ul className = "panel-info">
            <h2 >{props.building.name} </h2>
-            Height : 500ft
-            Sq Ft : 500,000
-            Est - 2018
+           <h3> Building Type: {props.building.type} </h3>
+            <h3> Height : {props.building.height} ft </h3>
+            <h3> Sq Ft : {props.building.footage} sq ft </h3>
+            <h3> Floors: {props.building.floors} </h3>
+           
             </ul>
             
             

@@ -55,6 +55,8 @@ export default class Map extends Component {
             element.remove()
         })
     }
+
+    //TODO - refactor cases into function calls
     addMarkers = (i) => {
         switch(i){
             case 0:
